@@ -81,7 +81,7 @@ class cluster_dataset(Dataset):
         # full inference results with label known and istest 
         self.annotations = []
         # total_train_labelled = 2000
-        j = 0
+        # j = 0
         for datum in self.train_gt:
             if datum['is_labelled']:
                 datum['is_test'] = False
@@ -89,9 +89,9 @@ class cluster_dataset(Dataset):
                 if j < 2:
                     print(datum['caption'])
                 self.annotations.append(datum)
-            j += 1
-            if j > total_train:
-                break      
+            # j += 1
+            # if j > total_train:
+            #     break      
         
         for datum in self.test_infer:
             if not datum['image_id'] in self.gt_dict.keys():
