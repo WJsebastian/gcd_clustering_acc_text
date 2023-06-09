@@ -89,10 +89,9 @@ class cluster_dataset(Dataset):
                 if j < 2:
                     print(datum['caption'])
                 self.annotations.append(datum)
-            # j += 1
-            # if j > total_train:
-            #     break      
-        
+            j += 1
+            if j > total_train:
+                break      
         for datum in self.test_infer:
             if not datum['image_id'] in self.gt_dict.keys():
                 continue
