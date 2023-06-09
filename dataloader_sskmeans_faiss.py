@@ -92,6 +92,8 @@ class cluster_dataset(Dataset):
             # j += 1
             # if j > total_train:
             #     break      
+
+            
         
         for datum in self.test_infer:
             if not datum['image_id'] in self.gt_dict.keys():
