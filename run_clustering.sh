@@ -1,0 +1,3 @@
+INFERENCE_ROOT=lavis/output/SemanticDiscovery/SEMDI_caption_ft_train_inference/semantic_discovery_semdi_t5_google/flan-t5-base_DUAL_scratch_alldata_adapter12_DescriptFull_DINOV2B_ZERO_INIT_CE_batch74_imgnet100_48token_2freq_1.2pen
+
+python debug.py 2>&1 | tee debug.log
